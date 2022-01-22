@@ -6,95 +6,79 @@
         <meta name="description" content="Space Club is a clothing brand and art collective dedicated 
         to being yourself and doing whatever it is that makes you happy no matter 
         what that may be, no matter what others think about it.">
+        <link rel="stylesheet" href="styles.css" />
         <title>Space Club</title>
     </head>
     <body>
-        <header>
-            <nav>
+        <header class="main-header">
+            <nav class="nav main-nav">
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="store.html">STORE</a></li>
                     <li><a href="about.html">ABOUT</a></li>
                 </ul>
             </nav>
-            <hr>
-            <h1>Space Club</h1>
-            <button type="button">Purchase Beats, Instant Delivery</button>
-            <br>
-            <br>
-            <!--Find Space Theme Image for Background-->
-            <button type="button">&#9658;</button>
+            <h1 class="brand-name brand-name-large">Space Club</h1>
+            <div class="container">
+                <button class="btn btn-header" type="button">Purchase Beats, Instant Delivery</button>
+            </div>
+            <button class="btn btn-header btn-play" type="button">&#9658;</button>
         </header>
-        <section>
-            <h2>ARTISTS</h2>
+        <section class="content-section container">
+            <h2 class="section-header">ARTISTS</h2>
             <div>
-                <div>
-                    <strong>Beanzo Breezy</strong>
-                    &lt;&gt;
-                    <span>Milwaukee, WI</span> 
-                    &lt;&gt;
-                    <button type="button">LISTEN NOW</button>
-                    <hr>
+                <div class="artist-row">
+                    <span class="artist-item artist-name">Beanzo Breezy</span>
+                    <span class="artist-item artist-city">Milwaukee, WI</span> 
+                    <button type="button" class="btn artist-item artist-btn btn-primary">LISTEN NOW</button>
                 </div>
-                <div>
-                    <strong>Lovesicc Vegas</strong>
-                    &lt;&gt;
-                    <span>Redding, CA</span> 
-                    &lt;&gt;
-                    <button type="button">LISTEN NOW</button>
-                    <hr>
+                <div class="artist-row">
+                    <span class="artist-item artist-name">Lovesicc Vegas</span>
+                    <span class="artist-item artist-city">Redding, CA</span> 
+                    <button type="button" class="btn artist-item artist-btn btn-primary">LISTEN NOW</button>
                 </div>
-                <div>
-                    <strong>Soryn</strong>
-                    &lt;&gt;
-                    <span>Phoenix, AZ</span> 
-                    &lt;&gt;
-                    <button type="button">LISTEN NOW</button>
-                    <hr>
+                <div class="artist-row">
+                    <span class="artist-item artist-name">Soryn</span>
+                    <span class="artist-item artist-city">Phoenix, AZ</span> 
+                    <button type="button" class="btn artist-item artist-btn btn-primary">LISTEN NOW</button>
                 </div>
-                <div>
-                    <strong>Low Lids</strong>
-                    &lt;&gt;
-                    <span>Moorhead, MN</span> 
-                    &lt;&gt;
-                    <button type="button">LISTEN NOW</button>
-                    <hr>
+                <div class="artist-row">
+                    <span class="artist-item artist-name">Low Lids</span>
+                    <span class="artist-item artist-city">Moorhead, MN</span> 
+                    <button type="button" class="btn artist-item artist-btn btn-primary">LISTEN NOW</button>
                 </div>
-                <div>
-                    <strong>BRINGBACKPLUTO</strong>
-                    &lt;&gt;
-                    <span>Milwaukee, WI</span> 
-                    &lt;&gt;
-                    <button type="button">LISTEN NOW</button>
-                    <hr>
+                <div class="artist-row">
+                    <span class="artist-item artist-name">BRINGBACKPLUTO</span>
+                    <span class="artist-item artist-city">Milwaukee, WI</span> 
+                    <button type="button" class="btn artist-item artist-btn btn-primary">LISTEN NOW</button>
                 </div>
-                <div>
-                    <strong>Nefarious</strong>
-                    &lt;&gt;
-                    <span>Greenville, SC</span> 
-                    &lt;&gt;
-                    <button type="button">LISTEN NOW</button>
+                <div class="artist-row">
+                    <span class="artist-item artist-name">Nefarious</span>
+                    <span class="artist-item artist-city">Greenville, SC</span> 
+                    <button type="button" class="btn artist-item artist-btn btn-primary">LISTEN NOW</button>
                 </div>
             </div>
         </section>
-        <footer>
-            <h3>Space Club</h3>
-            <ul>
-                <li>
-                    <a href="https://discord.gg/eJs5z2gz" target="_blank">
+        <footer class="main-footer">
+            <div class="container main-footer-container">
+                <h3 class="brand-name">Space Club</h3>
+                <ul class="nav footer-nav">
+                    <li>
+                        <a href="https://discord.gg/eJs5z2gz" target="_blank">
                         <img src="Images/discordlogo.png" width=50px height=50px>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://linktr.ee/beanzobreezy" target="_blank">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://linktr.ee/beanzobreezy" target="_blank">
                         <img src="Images/linktreelogo.png" width=30px height=30px>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/channel/UCYo2UC-pZqfPkUbvabS-qEw/videos" target="_blank">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCYo2UC-pZqfPkUbvabS-qEw/videos" target="_blank">
                         <img src="Images/youtubelogo.png" width=50px height=50px></li>
                     </a>
-            </ul>
+                </ul>
+            </div>  
         </footer>
     </body>
 </html>
