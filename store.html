@@ -6,113 +6,117 @@
         <meta name="description" content="Space Club is a clothing brand and art collective dedicated 
         to being yourself and doing whatever it is that makes you happy no matter 
         what that may be, no matter what others think about it.">
+        <link rel="stylesheet" href="styles.css">        
         <title>Store | Space Club</title>
     </head>
     <body>
-        <header>
-            <nav>
+        <header class="main-header">
+            <nav class="nav main-nav">
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="store.html">STORE</a></li>
                     <li><a href="about.html">ABOUT</a></li>
                 </ul>
             </nav>
-            <hr>
-            <h1>Space Club</h1>
+            <h1 class="brand-name brand-name-large">Space Club</h1>
         </header>
 
-        <section>
-            <h2>MERCH</h2>
-            <div>
-                <div>
-                    <strong>Insomnia Classic Hoodie</strong>
+        <section class="container content-section">
+            <h2 class="section-header">MERCH</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Insomnia Classic Hoodie</span>
+                    <img class="shop-item-image" src="Images/insomniahoodieblack.jpg" width=300px height=300px>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$40.00</span>
+                        <button class="btn btn-primary shop-item-btn" role="button">ADD TO CART</button>
+                    </div>
                 </div>
-                <img src="Images/insomniahoodieblack.jpg" width=300px height=300px>
-                <div>
-                    <span>$40.00</span>
-                    <button role="button">ADD TO CART</button>
+                <div class="shop-item">
+                    <span class="shop-item-title">Insomnia Classic Hoodie Pink</span>
+                    <img  class="shop-item-image" src="Images/insomniahoodiepink.jpg" width=300px height=300px>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$41.99</span>
+                        <button class="btn btn-primary shop-item-btn" role="button">ADD TO CART</button>
+                    </div>
                 </div>
-                <div>
-                    <strong>Insomnia Classic Hoodie Pink</strong>
+                <div class="shop-item">
+                    <span class="shop-item-title">Insomnia Essential Shirt</span>
+                    <img class="shop-item-image" src="Images/insomniashirt.jpg" width=300px height=300px>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$25.99</span>
+                        <button class="btn btn-primary shop-item-btn" role="button">ADD TO CART</button>
+                    </div>
                 </div>
-                <img src="Images/insomniahoodiepink.jpg" width=300px height=300px>
-                <div>
-                    <span>$41.99</span>
-                    <button role="button">ADD TO CART</button>
+                <div class="shop-item">
+                    <span class="shop-item-title">Insomnia Vintage Sticker</span>
+                    <img class="shop-item-image" src="Images/insomniasticker.jpg" width=300px height=300px>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$8.99</span>
+                        <button class="btn btn-primary shop-item-btn" role="button">ADD TO CART</button>
+                    </div>
                 </div>
-                <div>
-                    <strong>Insomnia Essential Shirt</strong>
-                </div>
-                <img src="Images/insomniashirt.jpg" width=300px height=300px>
-                <div>
-                    <span>$25.99</span>
-                    <button role="button">ADD TO CART</button>
-                </div>
-                <div>
-                    <strong>Insomnia Vintage Sticker</strong>
-                </div>
-                <img src="Images/insomniasticker.jpg" width=300px height=300px>
-                <div>
-                    <span>$8.99</span>
-                    <button role="button">ADD TO CART</button>
-                </div>
+            </div>
             </div>
         </section>
 
-        <section>
-            <h2>CART</h2>
-            <div>
-                <strong>ITEM</strong>
-                &lt;&gt;
-                <strong>PRICE</strong>
-                &lt;&gt;
-                <strong>QUANTITY</strong>
+        <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
             </div>
-            <div>
-                <img src="Images/insomniahoodiepink.jpg" width=100>
-                <span>Insomnia Classic Hoodie Pink</span>
-                &lt;&gt;
-                <span>$41.99</span>
-                &lt;&gt;
-                <input type="number" value="1">
-                <button role="button">REMOVE</button>
+            <div class="cart-items">
+                <div class="cart-row">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="Images/insomniahoodiepink.jpg" width=100>
+                        <span class="cart-item-title">Insomnia Classic Hoodie Pink</span>
+                    </div>
+                    <span class="cart-price cart-column">$41.99</span>
+                    <div class="cart-quantity cart-column">
+                        <input class="cart-quantity-input" type="number" value="1">
+                        <button class="btn btn-danger" role="button">REMOVE</button>
+                    </div>
+                </div>
+                <div class="cart-row">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="Images/insomniashirt.jpg" width=100>
+                        <span class="cart-item-title">Insomnia Essential Shirt</span>
+                    </div>
+                    <span class="cart-price cart-column">$25.99</span>
+                    <div class="cart-quantity cart-column">
+                        <input class="cart-quantity-input" type="number" value="1">
+                        <button class="btn btn-danger" role="button">REMOVE</button>
+                    </div>
+                </div>
             </div>
-            <div>
-                <img src="Images/insomniashirt.jpg" width=100>
-                <span>Insomnia Essential Shirt</span>
-                &lt;&gt;
-                <span>$25.99</span>
-                &lt;&gt;
-                <input type="number" value="1">
-                <button role="button">REMOVE</button>
+            <div class="cart-total">
+                <strong class="cart-total-title">TOTAL</strong>
+                <span class="cart-total-price">$67.98</span>
             </div>
-            <hr>
-            <div>
-                <strong>TOTAL</strong>
-                <span>$67.98</span>
-            </div>
-            <div>
-                <button role="button">PURCHASE</button>
-            </div>
+            <button class="btn btn-primary btn-purchase" role="button">PURCHASE</button>
         </section>
-        <footer>
-            <h3>Space Club</h3>
-            <ul>
-                <li>
-                    <a href="https://discord.gg/eJs5z2gz" target="_blank">
+        <footer class="main-footer">
+            <div class="container main-footer-container">
+                <h3 class="brand-name">Space Club</h3>
+                <ul class="nav footer-nav">
+                    <li>
+                        <a href="https://discord.gg/eJs5z2gz" target="_blank">
                         <img src="Images/discordlogo.png" width=50px height=50px>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://linktr.ee/beanzobreezy" target="_blank">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://linktr.ee/beanzobreezy" target="_blank">
                         <img src="Images/linktreelogo.png" width=30px height=30px>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/channel/UCYo2UC-pZqfPkUbvabS-qEw/videos" target="_blank">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCYo2UC-pZqfPkUbvabS-qEw/videos" target="_blank">
                         <img src="Images/youtubelogo.png" width=50px height=50px></li>
                     </a>
-            </ul>
+                </ul>
+            </div>  
         </footer>
     </body>
 </html>
